@@ -36,15 +36,24 @@
 </script>
 
 <script>
-    (function(w){
-        var k="nudgify",n=w[k]||(w[k]={});
-        n.uuid="fc69c63a-6bb4-41ea-9481-e74e935240c8";
-        var d=document,s=d.createElement("script");
-        s.src="https://pixel.nudgify.com/pixel.js";
-        s.async=1;
-        s.charset="utf-8";
-        d.getElementsByTagName("head")[0].appendChild(s)
-    })(window)
+    function attemptToInitializeProofFactorWithEmbed() {
+      if (document.getElementById('juicier-container') == null && document.body && window['PROOF_FACTOR_WIDGET_SCRIPT_LOADED'] === undefined || window['PROOF_FACTOR_WIDGET_SCRIPT_LOADED'] === false) {
+        var proofDiv = document.createElement('div');
+        proofDiv.id = 'juicier-container';
+        proofDiv.setAttribute('data-account-id', 'uIWjtNMUPQNHMNZCLJAOYUjJWO63');
+        proofDiv.setAttribute('style', 'position: relative;bottom: 0;left: 0;');
+        var proofJS = document.createElement('script');
+        proofJS.type = 'text/javascript';
+        proofJS.src = 'https://cdn.prooffactor.com/javascript/dist/1.0/jcr-widget.js?account_id=uIWjtNMUPQNHMNZCLJAOYUjJWO63';
+        proofJS.setAttribute('defer', '');
+        document.body.appendChild(proofDiv);
+        document.body.appendChild(proofJS);
+      }
+    }
+    attemptToInitializeProofFactorWithEmbed();
+    document.addEventListener('DOMContentLoaded', function (event) {
+    attemptToInitializeProofFactorWithEmbed();
+    });
 </script>
 </head>
 
