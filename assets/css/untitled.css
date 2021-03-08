@@ -1,8 +1,18 @@
 .bg-info {
-  background-color: #ee0979!important;
+  background-color: #f9482b!important;
 }
 
 .text-white {
   color: #fff!important;
+}
+
+.canvas__watermark-presentation {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  width: 124px;
+  height: 25px;
+  display: block;
+  visibility: hidden;
 }
 
