@@ -16,3 +16,6 @@
   visibility: hidden;
 }
 
+.canvas__watermark-presentation position: absolute; right: 50%; bottom: 50%; width: 124px; height: 25px; display: block; visibility: hidden; {
+}
+
