@@ -19,3 +19,56 @@
 .canvas__watermark-presentation position: absolute; right: 50%; bottom: 50%; width: 124px; height: 25px; display: block; visibility: hidden; {
 }
 
+
+/*
+  Customize notification styles using CSS and variables
+  You can use any of the variables in the Variables section above in your custom css
+*/
+
+/* .notification-box - is responsible for positioning of your notification. */
+.notification-box {}
+
+/* .notification - is responsible for background and size of your notification. */
+.notification {}
+.notification:hover {}
+
+/*
+  There are .notification-box selectors with possible modifiers below
+  You can add extend this selectors with any other child selector
+  for example ".notification-box.is-type-recent-activity .title {}"
+*/
+.notification-box.is-type-live-visitor-count {}
+.notification-box.is-type-aggregate-visitor-count {}
+.notification-box.is-type-recent-activity {}
+.notification-box.is-shape-rounded {}
+.notification-box.is-shape-squared {}
+.notification-box.is-mask-none {}
+.notification-box.is-mask-rounded-square {}
+.notification-box.is-icon-type-pulse {}
+.notification-box.is-icon-type-image {}
+.notification-box.is-desktop-left {}
+.notification-box.is-desktop-right {}
+.notification-box.is-desktop-top {}
+.notification-box.is-desktop-bottom {}
+.notification-box.is-mobile-top {}
+.notification-box.is-mobile-bottom {}
+.notification-box.is-mobile-visible {}
+.notification-box.is-clickable {}
+
+/* These are additional classes you can style */
+.image-box {}
+.image {}
+.body {}
+.title {}
+.title-text {}
+.title-highlight {}
+.subtitle-text {}
+.system-box {}
+.system-timestamp-text {}
+.system-branding-box {}
+.system-branding-verification-text {}
+.system-branding-icon {}
+.system-branding-company-text {}
+.button-close {}
+
+
